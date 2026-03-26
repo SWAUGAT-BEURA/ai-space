@@ -57,7 +57,7 @@ export default function Documents() {
     <div className="max-w-4xl mx-auto space-y-6">
       <motion.div {...fade(0)} className="flex items-start justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-white">Documents</h1>
+          <h1 className="text-2xl font-bold text-foreground">Documents</h1>
           <p className="text-sm text-muted-foreground mt-1">{docs.length} files · AI-powered summaries</p>
         </div>
         <button className="flex items-center gap-2 px-4 py-2 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 text-sm font-medium hover:bg-pink-500/15 transition-colors">

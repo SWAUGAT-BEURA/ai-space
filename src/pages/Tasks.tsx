@@ -47,7 +47,7 @@ function SheetCard({ sheet, onDelete }: { sheet: TaskSheet; onDelete: (id: strin
           <div className="flex items-center gap-3">
             <span className="text-2xl leading-none">{sheet.icon}</span>
             <div>
-              <h3 className="text-sm font-semibold text-white">{sheet.name}</h3>
+              <h3 className="text-sm font-semibold text-foreground">{sheet.name}</h3>
               <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">{sheet.description}</p>
             </div>
           </div>
@@ -183,7 +183,7 @@ function NewSheetModal({ onClose, onCreate }: NewSheetModalProps) {
         <div className="glass-strong rounded-2xl w-full max-w-md border border-white/10 pointer-events-auto shadow-2xl shadow-black/50">
           {/* Header */}
           <div className="flex items-center justify-between px-5 py-4 border-b border-white/5">
-            <p className="text-sm font-semibold text-white">Create New Task Sheet</p>
+            <p className="text-sm font-semibold text-foreground">Create New Task Sheet</p>
             <button onClick={onClose} className="w-7 h-7 rounded-lg hover:bg-white/5 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
               <X className="w-4 h-4" />
             </button>
@@ -307,7 +307,7 @@ export default function Tasks() {
       {/* Header */}
       <motion.div {...fade(0)} className="flex items-start justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-white">Task Sheets</h1>
+          <h1 className="text-2xl font-bold text-foreground">Task Sheets</h1>
           <p className="text-sm text-muted-foreground mt-1">
             {sheets.length} sheets · {totalTasks} tasks · each sheet can be powered by a workflow
           </p>

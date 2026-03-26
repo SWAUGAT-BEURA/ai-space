@@ -52,7 +52,7 @@ export default function Ledger() {
     <div className="max-w-4xl mx-auto space-y-6">
       <motion.div {...fade(0)} className="flex items-start justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-white">Finance Ledger</h1>
+          <h1 className="text-2xl font-bold text-foreground">Finance Ledger</h1>
           <p className="text-sm text-muted-foreground mt-1">Track income, expenses and AI-powered insights</p>
         </div>
         <button

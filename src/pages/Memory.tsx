@@ -50,7 +50,7 @@ export default function Memory() {
     <div className="max-w-4xl mx-auto space-y-8">
       <motion.div {...fade(0)} className="flex items-start justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-white">Memory Agent</h1>
+          <h1 className="text-2xl font-bold text-foreground">Memory Agent</h1>
           <p className="text-sm text-muted-foreground mt-1">{items.length} stored memories · personalization context</p>
         </div>
         <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl glass border border-violet-500/20">

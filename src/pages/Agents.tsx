@@ -65,7 +65,7 @@ export default function Agents() {
     <div className="max-w-7xl mx-auto space-y-8">
       <motion.div {...fade(0)} className="flex items-start justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-white">Agent Hub</h1>
+          <h1 className="text-2xl font-bold text-foreground">Agent Hub</h1>
           <p className="text-sm text-muted-foreground mt-1">{activeCount} of {agents.length} agents active</p>
         </div>
         <div className="flex items-center gap-3">
@@ -89,7 +89,7 @@ export default function Agents() {
               <s.icon className={`w-5 h-5 ${s.color}`} />
             </div>
             <div>
-              <p className="text-xl font-bold text-white">{s.value}</p>
+              <p className="text-xl font-bold text-foreground">{s.value}</p>
               <p className="text-xs text-muted-foreground">{s.label}</p>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function Agents() {
                     <agent.icon className={`w-5 h-5 ${agent.iconColor}`} />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-white">{agent.name}</p>
+                    <p className="text-sm font-semibold text-foreground">{agent.name}</p>
                     <p className="text-xs text-muted-foreground">{agent.role}</p>
                   </div>
                 </div>
@@ -146,15 +146,15 @@ export default function Agents() {
 
               <div className="grid grid-cols-3 gap-2 mb-4">
                 <div className="text-center">
-                  <p className="text-sm font-bold text-white">{agent.queries}</p>
+                  <p className="text-sm font-bold text-foreground">{agent.queries}</p>
                   <p className="text-[10px] text-muted-foreground">Queries</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-sm font-bold text-white">{agent.accuracy}%</p>
+                  <p className="text-sm font-bold text-foreground">{agent.accuracy}%</p>
                   <p className="text-[10px] text-muted-foreground">Accuracy</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-[11px] font-medium text-white truncate">{agent.lastRun}</p>
+                  <p className="text-[11px] font-medium text-foreground truncate">{agent.lastRun}</p>
                   <p className="text-[10px] text-muted-foreground">Last run</p>
                 </div>
               </div>

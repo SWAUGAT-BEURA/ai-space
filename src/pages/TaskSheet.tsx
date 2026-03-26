@@ -85,7 +85,7 @@ export default function TaskSheet() {
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-3 mb-1">
             <span className="text-2xl">{sheet.icon}</span>
-            <h1 className="text-2xl font-bold text-white">{sheet.name}</h1>
+            <h1 className="text-2xl font-bold text-foreground">{sheet.name}</h1>
           </div>
           <p className="text-sm text-muted-foreground">{sheet.description}</p>
 
@@ -105,7 +105,7 @@ export default function TaskSheet() {
               <button
                 key={v}
                 onClick={() => setView(v)}
-                className={cn("px-3 py-1.5 rounded-lg text-xs font-medium transition-all capitalize", view === v ? "bg-white/10 text-white" : "text-muted-foreground hover:text-foreground")}
+                className={cn("px-3 py-1.5 rounded-lg text-xs font-medium transition-all capitalize", view === v ? "bg-primary/10 text-foreground font-semibold" : "text-muted-foreground hover:text-foreground")}
               >
                 {v}
               </button>

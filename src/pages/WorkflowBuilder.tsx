@@ -265,7 +265,7 @@ export default function WorkflowBuilder() {
       <div className="flex items-center gap-3 px-4 py-2.5 border-b border-white/5 bg-[#141820] flex-shrink-0 z-20">
         <Link
           to={sheetId ? `/tasks/${sheetId}` : "/tasks"}
-          className="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center text-white/50 hover:text-white transition-colors"
+          className="w-8 h-8 rounded-lg bg-muted/50 hover:bg-muted flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
         </Link>
@@ -274,19 +274,19 @@ export default function WorkflowBuilder() {
           <input
             value={workflow.name}
             onChange={(e) => setWorkflow((p) => ({ ...p, name: e.target.value }))}
-            className="bg-transparent text-sm font-semibold text-white outline-none w-full placeholder:text-white/30"
+            className="bg-transparent text-sm font-semibold text-foreground outline-none w-full placeholder:text-muted-foreground"
             placeholder="Workflow name…"
           />
           <input
             value={workflow.description}
             onChange={(e) => setWorkflow((p) => ({ ...p, description: e.target.value }))}
-            className="bg-transparent text-[11px] text-white/40 outline-none w-full mt-0.5 placeholder:text-white/20"
+            className="bg-transparent text-[11px] text-muted-foreground outline-none w-full mt-0.5 placeholder:text-muted-foreground/50"
             placeholder="Description…"
           />
         </div>
 
         {sheet && (
-          <div className="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-white/50">
+          <div className="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-muted/50 border border-border text-xs text-muted-foreground">
             <span>{sheet.icon}</span>
             <span>{sheet.name}</span>
           </div>
@@ -295,7 +295,7 @@ export default function WorkflowBuilder() {
         <span className={cn(
           "px-2.5 py-1 rounded-lg text-[11px] font-semibold border",
           workflow.status === "active" ? "bg-green-500/10 text-green-400 border-green-500/20"
-          : workflow.status === "draft" ? "bg-white/5 text-white/40 border-white/10"
+          : workflow.status === "draft" ? "bg-muted/50 text-muted-foreground border-border"
           : "bg-amber-500/10 text-amber-400 border-amber-500/20"
         )}>
           {workflow.status}

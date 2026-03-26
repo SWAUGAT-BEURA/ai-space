@@ -50,7 +50,7 @@ export default function Automation() {
     <div className="max-w-5xl mx-auto space-y-8">
       <motion.div {...fade(0)} className="flex items-start justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-white">Automation Agent</h1>
+          <h1 className="text-2xl font-bold text-foreground">Automation Agent</h1>
           <p className="text-sm text-muted-foreground mt-1">Build workflows that run automatically</p>
         </div>
         <button className="flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm font-medium hover:bg-orange-500/15 transition-colors">
@@ -86,7 +86,7 @@ export default function Automation() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
-                        <p className="text-sm font-semibold text-white">{wf.name}</p>
+                        <p className="text-sm font-semibold text-foreground">{wf.name}</p>
                         <span className={cn("px-2 py-0.5 rounded-md text-[10px] font-medium", wf.status === "active" ? "bg-green-500/15 text-green-400" : "bg-muted/30 text-muted-foreground")}>
                           {wf.status}
                         </span>
@@ -142,7 +142,7 @@ export default function Automation() {
           {templates.map((t) => (
             <button key={t.name} className="glass rounded-2xl p-4 text-left hover:bg-white/5 transition-colors border border-white/5 hover:border-orange-500/20 group">
               <span className="text-2xl mb-3 block">{t.icon}</span>
-              <p className="text-sm font-medium text-foreground group-hover:text-white transition-colors">{t.name}</p>
+              <p className="text-sm font-medium text-foreground group-hover:text-foreground transition-colors">{t.name}</p>
               <p className="text-xs text-muted-foreground mt-1">{t.trigger}</p>
             </button>
           ))}

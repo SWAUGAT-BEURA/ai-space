@@ -70,7 +70,7 @@ export function AIChatPanel() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.97 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-6 right-6 z-50 w-[380px] h-[540px] glass-strong rounded-2xl flex flex-col overflow-hidden border border-white/10 shadow-2xl shadow-black/40"
+            className="fixed bottom-6 right-6 z-50 w-[380px] h-[540px] glass-strong rounded-2xl flex flex-col overflow-hidden shadow-2xl"
           >
             {/* Header */}
             <div className="flex items-center justify-between px-4 py-3.5 border-b border-white/5">

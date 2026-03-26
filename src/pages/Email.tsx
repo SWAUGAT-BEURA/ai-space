@@ -76,7 +76,7 @@ export default function Email() {
     <div className="max-w-4xl mx-auto space-y-6">
       <motion.div {...fade(0)} className="flex items-start justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-white">Email Agent</h1>
+          <h1 className="text-2xl font-bold text-foreground">Email Agent</h1>
           <p className="text-sm text-muted-foreground mt-1">{unread} unread · AI summarization & task extraction</p>
         </div>
         <div className="flex items-center gap-2">
@@ -116,7 +116,7 @@ export default function Email() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                      <p className={cn("text-sm truncate", !email.read ? "font-semibold text-white" : "font-medium text-foreground")}>{email.subject}</p>
+                      <p className={cn("text-sm truncate", !email.read ? "font-semibold text-foreground" : "font-medium text-foreground")}>{email.subject}</p>
                       {!email.read && <span className="w-2 h-2 rounded-full bg-amber-400 flex-shrink-0" />}
                     </div>
                     <p className="text-xs text-muted-foreground truncate">{email.from} · {email.preview}</p>
